@@ -45,8 +45,8 @@ const usuarioPromise = obterUsuario()
 // para manipular erros usamos o .catch
 
 usuarioPromise
-    .then(function(usuario) { //pego y retorno a funcao de usuario -> chamo a funcao de telefone -> ultima funcao e telefone
-        return obterTelefone(usuario.id)
+    .then(function(usuario) { 
+        return obterTelefone(usuario.id)//pego y retorno a funcao de usuario -> chamo a funcao de telefone -> ultima funcao e telefone
             .then(function resolveTelefone(result) { //PASAR RESULTADO USUARIO PARA FRENTE: 1.Se resolveTelefone, 2.Criar um novo objeto pra que o resultado consiga pegar o usuario tambem.
                 return {  // PORQUE UM .THEN DENTRO DE OUTRO .THEN: O primeiro .then e uma funcao que retorna una promise direita, soamente obterTelefone. para oter na proxima funcao o resultado anteior (os dados de usuario), 
                     usuario:{ // presicamos resolverTelefone (promese) pegar o resultado dela, e retornar so modificando o resultado
