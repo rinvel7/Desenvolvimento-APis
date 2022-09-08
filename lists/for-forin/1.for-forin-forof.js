@@ -1,11 +1,11 @@
-//importamos o arquivo service.js
+//1. importamos o arquivo service.js obterPessoa
 const service = require('./service')
-
+//2. cria funcao para manipular as informacoes
 async function main() {
     try{
         //3.Objetivo tentar iterar os items de objeto retornado de SWAPI 
         //retornar os so nome que estan dentro de results.
-        const result = await service.obterPessoas('a')
+        const result = await service.obterPessoas('a')//'a' certeca que vai trazer uma lista como resultado
         const names =[] //variavel onde sera adicionado a lista de SWAPI
         
 //-------------------------FOR--------------------------------------------       

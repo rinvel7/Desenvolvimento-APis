@@ -24,7 +24,7 @@ async function obterPessoas (nome) {
 
     //1. exportar o modulo node.js
     module.exports = {
-        obterPessoas //2. Vamos reutilizar ese modulo en outro aquivo chamado:1.for-forin-forof.js (copiar codigo)
+        obterPessoas //2. Vamos reutilizar ese modulo en outro aquivo chamado:1.for-forin-forof.js (copiar codigo) 
     }
     
 

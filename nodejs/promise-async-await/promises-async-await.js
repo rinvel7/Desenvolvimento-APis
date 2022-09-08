@@ -57,7 +57,7 @@ async function main() {
 
         console.log(`
         Nome: ${usuario.nome},
-        Telefone: (${telefone.ddd}) ${telefone.telefone},       
+        Telefone:(${telefone.ddd}) ${telefone.telefone},       
         Endereco: ${endereco.rua}, ${endereco.numero}
         `)
         console.timeEnd('medida-promise')
