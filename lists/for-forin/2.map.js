@@ -1,3 +1,7 @@
+//Map face un recorrido por todos os elementos
+//Modifia um elemento
+//retorna un novo arreglo baseado no que usuario pidio.
+
 //1. importar obterPessoa a traves de aquivo service.js
 const service = require('./service')
 //2. cria funcao para manipular as informacoes:
@@ -12,9 +16,12 @@ async function main(){
         //})
         //A DIFERENCA Com o metodo map() e que nao e precisso criar variavel extrernas, mas se criar diretamente em a funcao
         //retornar o que se precissa e map vai retornar uma nova funcao.
+
         //const names = results.results.map(function (pessoa) {
         //    return pessoa.name
         //})
+        //codigo uma sola linea
+        const names = results.results.map((pessoa) => pessoa.name)
     
         console.log('names', names)
 

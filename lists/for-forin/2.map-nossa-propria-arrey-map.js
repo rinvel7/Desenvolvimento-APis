@@ -2,7 +2,7 @@
 const service = require('./service')
 
 //2.criar nossa propria array:
-//sustituir a funcao global de JS
+//a. Sustituir a funcao global de JS
 Array.prototype.meuMap = function (callback) {
     const novoArrayMapeado = []
     for (let indice = 0; indice <= this.length - 1; indice++) {
