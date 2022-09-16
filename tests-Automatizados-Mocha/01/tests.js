@@ -33,7 +33,7 @@ describe('Star Wars Test', function () {
         }]
         const nomeBase = 'r2-d2'
         const resultado = await obterPessoas(nomeBase)  //verifica si o valor que veo de esse resultado e o que se espera (expected)
-        assert.deepEqual(resultado, expected) //verifica a igualdade entre dois objetos
+        assert.deepEqual(resultado, expected) //deepEqual verifica a igualdade entre dois objetos
       
 
     })
